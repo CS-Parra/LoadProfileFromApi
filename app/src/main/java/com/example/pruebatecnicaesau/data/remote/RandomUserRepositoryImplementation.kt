@@ -11,7 +11,7 @@ class RandomUserRepositoryImplementation @Inject constructor(
 ): RandomUserRepository {
 
 
-    override suspend fun getRandomUser(): Resource<RandomUser> {
+    override suspend fun fetchRandomUser(): Resource<RandomUser> {
         return try{
             Resource.Success(
                 data = randomUserApi.getRandomUser().results.first().toDomain()

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">PruebaTecnicaEsau</string>
+    <string name="main_update">Update</string>
+    <string name="main_user_name">Juan Perez</string>
 </resources>

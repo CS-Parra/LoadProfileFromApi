@@ -5,5 +5,5 @@ import com.example.pruebatecnicaesau.domain.util.Resource
 
 interface RandomUserRepository {
 
-    suspend fun getRandomUser() : Resource<RandomUser>
+    suspend fun fetchRandomUser() : Resource<RandomUser>
 }
