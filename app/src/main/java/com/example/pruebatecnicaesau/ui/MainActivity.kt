@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
 
         initListeners()
         initObserver()
-        initData()
+        //initData()
 
     }
 
@@ -62,6 +62,9 @@ class MainActivity : AppCompatActivity() {
         with(binding){
             userName.text = randomUser.name
             userImage.load(randomUser.image)
+            userEmail.text = randomUser.email
+            userBirthday.text = randomUser.birthday
+            userAddress.text = randomUser.address
         }
     }
     private fun handleError(){

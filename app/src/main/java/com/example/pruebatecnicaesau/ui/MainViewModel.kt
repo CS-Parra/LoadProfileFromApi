@@ -24,6 +24,10 @@ class MainViewModel @Inject constructor(
     val isLoading: LiveData<Boolean>
         get() = _isLoading
 
+    init{
+        getRandomUser()
+    }
+
     fun getRandomUser(){
         viewModelScope.launch {
             _isLoading.value = true
